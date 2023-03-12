@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crm</title>
+
+    <link rel="preload" href="fonts/InterBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/InterSemibold.woff2" as="font" type="font/woff2" crossorigin>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page">
+    <section class="product">
+        <div class="container">
+            <h2 class="product__title">Добавить товар</h2>
+            <form class="product__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+                <fieldset class="product__fieldset">
+
+                    <label class="product__label">
+                        <p class="product__text">
+                            Наименование
+                        </p>
+                        <input class="product__input" type="text" name="name" required>
+                    </label>
+
+                    <label class="product__label">
+                        <p class="product__text">
+                            Категория
+                        </p>
+                        <input class="product__input" type="text" name="category" required>
+                    </label> 
+
+                    <label class="product__label">
+                        <p class="product__text">
+                            Единицы измерения
+                        </p>                        
+                        <input class="product__input" type="text" name="units" required>
+                    </label>
+
+                    <label class="product__label product__label_checkbox">
+                        <p class="product__text">
+                            Дисконт
+                        </p>                        
+                        <input class="product__input product__input_checkbox" type="checkbox" name="discount">
+                        <input class="product__input product__input_text" type="text" name="discount">
+                    </label>
+
+                    <label class="product__label">
+                        <p class="product__text">
+                            Описание
+                        </p>                        
+                        <textarea class="product__textarea-about" name="about" cols="30" rows="10" required></textarea>
+                    </label>
+
+                    <label class="product__label">
+                        <p class="product__text">
+                            Количество
+                        </p>                        
+                        <input class="product__input" type="text" name="count" required inputmode="numeric">
+                    </label>
+
+                    <label class="product__label">
+                        <p class="product__text">
+                            Цена
+                        </p>                        
+                        <input class="product__input" type="text" name="price" required inputmode="numeric">
+                    </label>
+                </fieldset>
+
+                <button class="product__btn" type="submit">Добавить товар</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>

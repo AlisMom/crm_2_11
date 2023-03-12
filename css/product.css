@@ -1,0 +1,131 @@
+.product {
+    padding: 32px 0 28px;
+}
+
+.product__title {
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.1em;
+    padding-bottom: 43px;
+}
+
+.product__form {
+    max-width: 580px;
+}
+
+.product__fieldset {
+    padding: 28px;
+    margin-bottom: 32px;
+}
+
+.product__text {
+    padding-bottom: 5px;
+    line-height: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.product__input {
+    min-width: 524px;
+    min-height: 40px;
+    margin-bottom: 12px;
+    background-color: #F4F2FF;
+}
+
+.product__input:focus-visible {
+    outline: none
+}
+
+.product__textarea-about {
+    min-width: 524px;
+    min-height: 112px;
+    background-color: #F4F2FF;
+}
+
+.product__textarea-about:focus-visible {
+    outline: none
+}
+
+.product__label_checkbox {
+    display: inline;
+    position: relative;
+}
+
+.product__input_checkbox {
+    min-width: 40px;
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.product__input_checkbox:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #F4F2FF;
+    border-radius: 6px;
+}
+
+.product__input_checkbox:after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    width: 20px;
+    height: 10px;
+    border: 3px solid black;
+    border-top: none;
+    border-right: none;
+    opacity: 0;
+    transform: rotate(-45deg);
+}
+
+.product__input_checkbox:focus-visible {
+    outline: none
+}
+
+.product__input_checkbox:checked:after {
+    opacity: 1
+}
+
+.product__input_checkbox:focus:before {
+    box-shadow: 0px 0px 10px rgba(113, 0, 227, 0.5);
+}
+
+.product__input_checkbox:hover:not(:disabled):before {
+    box-shadow: 0px 0px 10px rgba(0, 113, 227, 0.5);
+}
+
+.product__input_checkbox:disabled:before {
+    background-color: #cccccc;
+}
+
+.product__input_text {
+    min-width: 474px;
+    margin-left: 50px;
+    background-color: #EEEEEE;
+    pointer-events: none; 
+}
+
+.product__input_checkbox:checked + .product__input_text {
+    background-color: #F4F2FF;
+    pointer-events:all;
+}
+
+.product__btn {
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 10px 25px;
+    background: #6D5BD0;
+    border-radius: 6px;
+    border: none;
+    margin-left: 350px;
+}
