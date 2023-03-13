@@ -1,5 +1,7 @@
 .product {
     padding: 32px 0 28px;
+    max-width: 792px;
+    margin: 0px auto;
 }
 
 .product__title {
